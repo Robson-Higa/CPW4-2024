@@ -1,16 +1,15 @@
 import { HeaderContainer, HeaderTitle } from "./styles";
 
 type Props = {
+  title: string;
+};
 
-    title: string
-}
-
-const Header = ({title}:Props) => {
-    return(
-        <HeaderContainer>
-            <HeaderTitle data-cy='reader-title'>{title}</HeaderTitle>
-        </HeaderContainer>
-    )
-}
+const Header = ({ title }: Props) => {
+  return (
+    <HeaderContainer>
+      <HeaderTitle data-cy="header-title">{title}</HeaderTitle>
+    </HeaderContainer>
+  );
+};
 
 export default Header;

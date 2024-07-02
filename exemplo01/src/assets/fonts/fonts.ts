@@ -1,18 +1,15 @@
-import { createGlobalStyle } from "styled-components"
+import RegularFont from "./Inter-Regular.ttf";
+import BoldFont from "./Inter-Bold.ttf";
+import { createGlobalStyle } from "styled-components";
 
-import RegularFont from "./Lato-Regular.ttf"
-import BoldFont from "./Lato-Bold.ttf"
-
-const fontStyles = createGlobalStyle`
+export const FontStyles = createGlobalStyle`
     @font-face {
-        font-family : 'regular';
-        src: url($(RegularFont));
+        font-family: "regular";
+        src: url(${RegularFont});
     }
 
     @font-face {
-
-        font-family: 'bold';
-        src: url($(BoldFont));
+        font-family: "bold";
+        src: url(${BoldFont});
     }
-`
-export default fontStyles
+`;
