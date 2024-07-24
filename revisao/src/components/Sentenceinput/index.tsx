@@ -8,7 +8,7 @@ type Props = {
 const SentenceInput = ({ sentence, setSentence }: Props) => {
     return (
         <div className= {styles.container}>
-            <input type="text" value={sentence} onChange={(e) => setSentence(e.target.value)} placeholder="Digite a frase"/>
+            <input type="text" data-cy="sentence-input" value={sentence} onChange={(e) => setSentence(e.target.value)} placeholder="Digite a frase"/>
         </div>
     );
 
