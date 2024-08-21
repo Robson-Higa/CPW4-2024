@@ -1,5 +1,5 @@
 declare namespace Cypress {
   interface Chainable {
-    performSeach(term: string, apiResponse: any): Chainable<Element>
+    performSearch(term: string, apiResponse: any): Chainable<Element>;
   }
 }
